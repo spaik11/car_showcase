@@ -5,7 +5,13 @@ import { CustomButton } from '.';
 type Props = {};
 
 const Hero = (props: Props) => {
-  const handleScroll = () => {};
+  const handleScroll = () => {
+    const nextSection = document.getElementById('discover');
+
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className='hero'>
